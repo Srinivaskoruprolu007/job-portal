@@ -1,0 +1,38 @@
+[
+  {
+    "question": "How do I create an account?",
+    "answer": "To create an account, click on the 'Sign Up' button on the homepage, fill in your details, and follow the prompts. You'll receive a confirmation email to complete the registration process."
+  },
+  {
+    "question": "Is NextOp free to use?",
+    "answer": "Yes, job seekers can use NextOp for free to search and apply for jobs. Some premium features may be available for employers on a subscription basis."
+  },
+  {
+    "question": "How do I apply for jobs?",
+    "answer": "Simply search for your desired role, click on the job listing, and then click 'Apply Now.' You can submit your application through NextOp or follow the instructions provided by the employer."
+  },
+  {
+    "question": "Can I save jobs to view later?",
+    "answer": "Yes, you can save jobs by clicking the 'Save Job' button on each listing. Access your saved jobs from your dashboard anytime."
+  },
+  {
+    "question": "How can I track my job applications?",
+    "answer": "Your dashboard includes an 'Applications' tab where you can view the status of all your applications and receive updates on your progress."
+  },
+  {
+    "question": "How do I post a job as an employer?",
+    "answer": "If you're an employer, sign in to your account, go to the 'Post a Job' section, and follow the steps to create a new job listing. Once published, it will be visible to job seekers."
+  },
+  {
+    "question": "Can I customize my company profile?",
+    "answer": "Yes, employers can personalize their company profiles with a logo, description, and links to give job seekers a better idea of their brand."
+  },
+  {
+    "question": "How does NextOp match candidates to jobs?",
+    "answer": "NextOp uses an advanced algorithm to recommend jobs based on your profile, skills, and preferences, ensuring that you see the most relevant opportunities."
+  },
+  {
+    "question": "How can I contact support?",
+    "answer": "You can reach our support team through the 'Contact Us' section on the website or by emailing support@nextop.com. We're here to help!"
+  }
+]
