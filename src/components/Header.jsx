@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Logo from "/Nextop.png";
-import { SignedOut, SignIn } from "@clerk/clerk-react";
+import { SignedOut, SignIn, useUser } from "@clerk/clerk-react";
 import { SignedIn } from "@clerk/clerk-react";
 import { SignInButton } from "@clerk/clerk-react";
 import { UserButton } from "@clerk/clerk-react";
@@ -11,6 +11,7 @@ import { BriefcaseBusinessIcon, Heart, PenBox } from "lucide-react";
 const Header = () => {
   const [showSignIn, setShowSignIn] = useState(false);
   const [search, setSearch] = useSearchParams("");
+  const { user } = useUser();
   useEffect(() => {
     if (search.get("sign-in")) {
       setShowSignIn(true);
@@ -36,11 +37,14 @@ const Header = () => {
           </SignedOut>
           <SignedIn>
             {/* add a condition to validate recruiter  */}
-            <Link to="post-job">
-              <Button variant="destructive" className="rounded-full">
-                <PenBox size={20} className="mr-2" /> Post a Job
-              </Button>
-            </Link>
+            {user?.unsafeMetadata?.role === "recruiter" && (
+              <Link to="post-job">
+                <Button variant="destructive" className="rounded-full">
+                  <PenBox size={20} className="mr-2" /> Post a Job
+                </Button>
+              </Link>
+            )}
+
             <UserButton
               appearance={{
                 elements: {

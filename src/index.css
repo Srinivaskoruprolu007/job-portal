@@ -67,9 +67,20 @@
 
 @layer utilities {
   .gradient {
-    @apply bg-gradient-to-br from-gray-500 via-gray-200 to-white;
+    @apply bg-gradient-to-tr from-gray-800 via-gray-300 to-gray-100;
   }
   .gradient-title {
     @apply gradient text-transparent bg-clip-text;
   }
+  .gradient-subtle {
+    @apply bg-gradient-to-br from-blue-600 via-teal-500 to-purple-500;
+  }
+  .gradient-shadow {
+    @apply shadow-lg shadow-gray-400/50;
+  }
+}
+.wmde-markdown{
+  list-style: disc;
+  padding-left: 25px;
+  color: white;
 }

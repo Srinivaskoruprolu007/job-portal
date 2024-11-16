@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Button } from "./components/ui/button";
+
 import AppLayout from "./layouts/app-layout";
 import LandingPage from "./pages/LandingPage";
 import Onboarding from "./pages/Onboarding";
@@ -10,6 +10,7 @@ import MyJobs from "./pages/MyJobs";
 import "../src/App.css";
 import { ThemeProvider } from "./components/theme-provider";
 import ProtectedRoute from "./components/protected-route";
+import Job from "./pages/Job";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -55,6 +56,14 @@ const router = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <MyJobs />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "/job/:id",
+        element: (
+          <ProtectedRoute>
+            <Job />
           </ProtectedRoute>
         ),
       },
